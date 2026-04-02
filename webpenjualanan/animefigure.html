@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Linos|AnimeFigure</title>
+</head>
+</main>
+
+
+
+
+</div>
+
+
+<body>
+
+<div id="container">
+    <div class="header">
+        <img src="linos.png" alt="Logo Anda" width="400" height="250">
+    </div>
+</div>
+
+<div id="menu">
+    <div class="left">
+        <ul>
+            <li><a href="manga.html">Manga</a></li>
+            <li><a href="merchandise.html">Merchandise Anime</a></li>
+            <li><a href="novel.html">Novel Anime</a></li>
+            <li><a href="plush.html">Plush</a></li>
+            <li><a href="animefigure.html">Anime Figure</a></li>
+            <li><a href="home.html">Beranda</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<h3 align="center">PILIHAN PRODUK</h3>
+<div id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button onclick="pesan()">Pesan</button>
+</div>
+<script>
+      function pesan() {
+        
+        alert('Pesan berhasil diterima!');
+    }
+    var cart = [];
+
+    function addToCart(productName, price) {
+        var item = {
+            name: productName,
+            price: price
+        };
+
+        cart.push(item);
+
+        // Update cart display
+        updateCartDisplay();
+    }
+
+    function updateCartDisplay() {
+        var cartList = document.getElementById('cart-list');
+        var cartTotal = document.getElementById('cart-total');
+        var total = 0;
+
+        // Clear existing cart items
+        cartList.innerHTML = '';
+
+        // Populate cart items
+        cart.forEach(function(item) {
+            var listItem = document.createElement('li');
+            listItem.textContent = item.name + ' - $' + item.price.toFixed(2);
+            cartList.appendChild(listItem);
+
+            total += item.price;
+        });
+
+        // Update total in the cart
+        cartTotal.textContent = total.toFixed(2);
+    }
+</script>
+<div class="middle">
+    <div class="produk">
+        <div class="foto">
+            <a href="produk1.html"><img src="shanks.jpg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Shanks</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Shanks', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="produk2.html"><img src="luffy.jpg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Luffy Gear 5</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Luffy Gear 5', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="produk3.html"><img src="zoro.jpeg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Roronoa Zoro</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Roronoa Zoro', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="produk4.html"><img src="sanji.jpg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Sanji Black Foot</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Sanji Black Foot', 20.00)">Add to Cart</button>
+    </div>
+    
+  
+    <div class="produk">
+        <div class="foto">
+            <a href="produk5.html"><img src="yamato.jpg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Yamato</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Yamato', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="produk6.html"><img src="chopper.jpg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Tony Tony Chopper</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Tony Tony Chopper', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="produk7.html"><img src="robin.jpeg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Nico Robin</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Nico Robin', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="produk8.html"><img src="franky.jpg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Franky</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Franky', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="produk9.html"><img src="brook.jpg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Brook</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Brook', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="produk10.html"><img src="jinbei.jpg" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Jinbei</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Jinbei', 20.00)">Add to Cart</button>
+    </div>
+</div>
+
+<div class="footer">
+    <p>
+        <a href="#"><img src="FB.png" alt="Facebook" height="50" width="50"></a>
+        <a href="#"><img src="Twitter.png" alt="Twitter" height="50" width="50"></a>
+        <a href="#"><img src="IG.png" alt="Instagram" height="50" width="50"></a>
+    </p>
+    <br>
+    <p align="center">© 2023 - Linos</p>
+</div>
+</body>
+</html>

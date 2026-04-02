@@ -1,0 +1,147 @@
+body, div, ul, li, h1, h2, h3, p, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   background:  #58461e;
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #8f893f;
+    background: #8f893f;
+}
+
+#menu ul {
+    list-style: none;
+
+    text-align: center;
+    padding: 10px 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    color: #ff9900;
+}
+
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.produk {
+     background: linear-gradient(to bottom, #58461e, #b69b60, #6e6a2c);
+    border: 1px solid #6e6a2c;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nama_produk {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    background-color: #8f893f;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ff9900;
+}
+
+.left{
+	width: 200px;
+    color: #fff;
+       padding: 10px;
+    margin: 10px 0 10px 10px;
+    float: left;
+    background: linear-gradient(to bottom, #58461e, #b69b60, #6e6a2c);
+}
+
+.left ul{
+    list-style-type: none;
+}
+
+.left ul li{
+    display: block;
+}
+
+.left ul li a{
+	display: block;
+    font-size: 17px;
+    border-bottom: 1px dotted #d4d2db;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+.left ul li a:hover{
+    color: #ca1414;
+}
+
+body, td, th {
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #664806;
+}
+
+/* Tambahkan gaya untuk tampilan grid produk */
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produk-grid .produk {
+    text-align: center;
+}
+
+.produk-grid .foto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.produk-grid .nama_produk {
+    margin-top: 10px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Linos|Novel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style type="text/css">
+<!--
+body,td,th {
+	color: #FFFFFF;
+}
+-->
+</style></head>
+<body>
+
+<div id="container">
+    <div class="header">
+        <img src="linos.png" alt="Logo Anda" width="400" height="250">
+    </div>
+</div>
+
+<div id="menu">
+    <div class="left">
+        <ul>
+            <li><a href="manga.html">Manga</a></li>
+            <li><a href="merchandise.html">Merchandise Anime</a></li>
+            <li><a href="novel.html">Novel Anime</a></li>
+            <li><a href="plush.html">Plush</a></li>
+            <li><a href="animefigure.html">Anime Figure</a></li>
+            <li><a href="home.html">Beranda</a></li>
+        </ul>
+    </div>
+</div>
+
+<h3 align="center">PILIHAN PRODUK</h3>
+<div id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button onclick="pesan()">Pesan</button>
+</div>
+<script>
+      function pesan() {
+        
+        alert('Pesan berhasil diterima!');
+    }
+    var cart = [];
+
+    function addToCart(productName, price) {
+        var item = {
+            name: productName,
+            price: price
+        };
+
+        cart.push(item);
+
+        // Update cart display
+        updateCartDisplay();
+    }
+
+    function updateCartDisplay() {
+        var cartList = document.getElementById('cart-list');
+        var cartTotal = document.getElementById('cart-total');
+        var total = 0;
+
+        // Clear existing cart items
+        cartList.innerHTML = '';
+
+        // Populate cart items
+        cart.forEach(function(item) {
+            var listItem = document.createElement('li');
+            listItem.textContent = item.name + ' - $' + item.price.toFixed(2);
+            cartList.appendChild(listItem);
+
+            total += item.price;
+        });
+
+        // Update total in the cart
+        cartTotal.textContent = total.toFixed(2);
+    }
+</script>
+
+<div class="middle">
+    <div class="produk">
+        <div class="foto">
+            <a href="novel1.html"><img src="novel1.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Bleach: Can't Fear Your Own World</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Bleach: Cant Fear Your Own World', 20.00)">Add to Cart</button>
+    </div>
+
+    <div class="produk">
+        <div class="foto">
+            <a href="novel2.html"><img src="novel2.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Accel World Vol. 1-24</div>
+        <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Accel World Vol. 1-24', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="novel3.html"><img src="novel3.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">That time i got reincarnated as a slime</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('That time i got reincarnated as a slime', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="novel4.html"><img src="novel4.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">High school D x D</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('High school D x D', 20.00)">Add to Cart</button>
+    </div>
+    
+  
+    <div class="produk">
+        <div class="foto">
+            <a href="novel5.html"><img src="novel5.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Sasuke Retsuden</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Sasuke Retsuden', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="novel6.html"><img src="novel6.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">The eminence in shadow Vol.1</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('The eminence in shadow Vol.1', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="novel7.html"><img src="novel7.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Vivi prototype Vol.1</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Vivi prototype Vol.1', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="novel8.html"><img src="novel8.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Fate strange fake</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Fate strange fake', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="novel9.html"><img src="nove9.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Legend of thousand </div>
+                year dragon;One piece</div>
+                <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Legend of thousand', 20.00)">Add to Cart</button>
+    </div>
+    
+    <div class="produk">
+        <div class="foto">
+            <a href="novel10.html"><img src="novel10.webp" alt="one piece" width="200" height="200"></a>
+            <div class="nama_produk">Itachi's strory Vol.1</div>
+            <p>$20.00</p>
+        </div>
+        <button onclick="addToCart('Itachis strory Vol.1', 20.00)">Add to Cart</button>
+    </div>
+</div>
+
+<div class="footer">
+    <p>
+        <a href="#"><img src="FB.png" alt="Facebook" height="50" width="50"></a>
+        <a href="#"><img src="Twitter.png" alt="Twitter" height="50" width="50"></a>
+        <a href="#"><img src="IG.png" alt="Instagram" height="50" width="50"></a>
+    </p>
+    <br>
+    <p align="center">© 2023 - Linos</p>
+</div>
+</body>
+</html>
